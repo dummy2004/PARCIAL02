@@ -6,7 +6,7 @@ MinStack::Node::Node(int val, int min_val, Node* next_node) : value(val), min_va
 
 MinStack::MinStack() : top_node(nullptr) {}
 
-MinStack::~MinStack() {
+MinStack::MinStack() {
     while (top_node != nullptr) {
         Node* temp = top_node;
         top_node = top_node->next;
