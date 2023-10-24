@@ -36,18 +36,4 @@ int MinStack::getMin() {
     return INT_MIN;
 }
 
-int main() {
-    MinStack* minStack = new MinStack();
-    minStack->push(-2);
-    minStack->push(0);
-    minStack->push(-3);
-    std::cout << "Min: " << minStack->getMin() << std::endl;
-    minStack->pop();
-    std::cout << "Top: " << minStack->top() << std::endl;
-    std::cout << "Min: " << minStack->getMin() << std::endl;
-
-    delete minStack;
-
-    return 0;
-}
 
